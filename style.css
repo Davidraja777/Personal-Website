@@ -307,6 +307,9 @@ Card-container1{
   display: flex;
   justify-content: center;
 }
+.Card-container a{
+  text-decoration: none;
+}
 .card1{
   width: 90%;
   max-width: 150px;
