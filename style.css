@@ -61,59 +61,57 @@ nav{
   transition: 0.9s all;
 }
 nav h1{
-    float: left;
-    font-family: 'Allura', cursive;
-    margin: auto;
-    color: #000;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer
+  float: left;
+  font-family: 'Allura', cursive;
+  margin: auto;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer
+}
+nav h1 span{
+  font-family: 'Allura', cursive;
+  margin: auto;
+  transition: .5s linear
+}
+nav h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+nav h1:hover span:nth-child(1):after{
+  content: "'";
+}
+nav h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+nav h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+  0 0 20px #fff, 
+  0 0 40px #fff;
+}
+nav ul li{
+  display: inline;
+  margin: 10px 0px; 
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  transform: translateX(0px);
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.9s all;
+  overflow: hidden;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  background: #8f857d;
+  margin: 1px;
   }
-  nav h1 span{
-    font-family: 'Allura', cursive;
-    margin: auto;
-    transition: .5s linear
-  }
-  nav h1:hover span:nth-child(1)
-  {
-    margin-right: 5px
-  }
-  nav h1:hover span:nth-child(1):after
-  {
-    content: "'";
-  }
-  nav h1:hover span:nth-child(2)
-  {
-    margin-left: 30px
-  }
-  nav h1:hover span{
-    color: #fff;
-    text-shadow: 0 0 10px #fff,
-    0 0 20px #fff, 
-    0 0 40px #fff;
-  }
-  nav ul li{
-    display: inline;
-    margin: 10px 0px; 
-  }
-  nav ul li a{
-    text-decoration: none;
-    color: black;
-    transform: translateX(0px);
-    padding: 10px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.9s all;
-    overflow: hidden;
-    box-shadow: 0 5px 5px rgba(0,0,0,.2);
-    background: #8f857d;
-    margin: 1px;
-  }
-  nav ul li a:hover{
-    filter: drop-shadow(6px 6px 40px);
-    transform: translateX(-5px);
-    background: #decbb7;
+nav ul li a:hover{
+  filter: drop-shadow(6px 6px 40px);
+  transform: translateX(-5px);
+  background: #decbb7;
+}
 nav ul li{
   display: inline;  
   margin: 0px 0px;
